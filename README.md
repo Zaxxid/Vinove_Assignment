@@ -24,6 +24,11 @@ It also shows Start Location, Stop Location, Total KMs & Total Duration travelle
 ![Screenshot 2025-01-20 170050](https://github.com/user-attachments/assets/6b881890-2696-41d2-8f4e-b7a1d65ba308)
 
 
+
+![Screenshot 2025-01-20 171345](https://github.com/user-attachments/assets/e8b43da6-b1b7-4c42-b871-17d5d823b3d7)
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
