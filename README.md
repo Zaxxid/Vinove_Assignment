@@ -1,6 +1,8 @@
 #Vinove_Assignment(Location Tracking)
-
-A new Flutter project.
+Developing  Location screen within Flutter framework using Android Studio , Visual Studio and Android Studio Emulator.
+It contain the Attendance Record of the employees and their live location and Route travelled by them.
+It shows all the visited locations in timeline view.
+It shows Start Location, Stop Location, Total KMs & Total Duration travelled.
 
 ## Getting Started
 
