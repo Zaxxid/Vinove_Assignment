@@ -496,7 +496,8 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.indigo,
-          title: const Text('ATTENDANCE', style: TextStyle(color: Colors.white)),
+          title:
+              const Text('ATTENDANCE', style: TextStyle(color: Colors.white)),
         ),
         drawer: const myDrawer(),
         body: SingleChildScrollView(
@@ -517,7 +518,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                         CircleAvatar(
                           radius: 15, // You can adjust the size
                           backgroundImage: NetworkImage(
-                              'https://i.pinimg.com/736x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg'), // Replace with your image URL or asset
+                              'https://static.vecteezy.com/system/resources/previews/033/177/400/non_2x/team-member-icon-vector.jpg'), // Replace with your image URL or asset
                         ),
                         SizedBox(
                           width: 5,
@@ -556,7 +557,8 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                     SizedBox(width: screenWidth * 0.01), // Responsive spacing
                     const Icon(Icons.arrow_forward_ios, color: Colors.grey),
                     SizedBox(width: screenWidth * 0.04),
-                    const Icon(Icons.calendar_today_outlined, color: Colors.grey),
+                    const Icon(Icons.calendar_today_outlined,
+                        color: Colors.grey),
                   ],
                 ),
               ),
@@ -654,8 +656,8 @@ class MyListTile extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => LocationHistoryScreen(Member(
-                            "Mandeep Singh ",
-                            "MSJ888",
+                            "Esther Howard ",
+                            "WSL0053",
                             "Online",
                             "12345",
                             "9828")),
@@ -673,8 +675,8 @@ class MyListTile extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => LiveLocationScreen(Member(
-                            "Mandeep Singh",
-                            "MSJ888",
+                            "Esther Howard",
+                            "WSL0053",
                             "Online",
                             "12345",
                             "9828")),
@@ -697,12 +699,13 @@ class MyListTile extends StatelessWidget {
                 ),
                 SizedBox(width: screenWidth * 0.08), // Responsive spacing
                 if (isWorking)
-                  const Icon(Icons.warning_rounded, color: Colors.orange, size: 18),
+                  const Icon(Icons.warning_rounded,
+                      color: Colors.orange, size: 18),
                 SizedBox(width: screenWidth * 0.02),
                 isWorking
                     ? Container(
-                        padding:
-                            const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
                           color: Colors.green[100],
                           borderRadius: BorderRadius.circular(5),
@@ -731,8 +734,10 @@ class MyListTile extends StatelessWidget {
           : Row(
               children: [
                 Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
                     borderRadius: BorderRadius.circular(5),
@@ -767,8 +772,8 @@ class myDrawer extends StatelessWidget {
       elevation: 20,
       child: Theme(
         data: Theme.of(context).copyWith(
-          iconTheme:
-              const IconThemeData(color: Colors.white), // Change icon color here
+          iconTheme: const IconThemeData(
+              color: Colors.white), // Change icon color here
         ),
         child: ListView(
           padding: EdgeInsets.zero,
@@ -816,14 +821,14 @@ class myDrawer extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Cameron Williomson',
+                            'Cameron Williamson',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600),
                           ),
                           Text(
-                            'cameronwilliomson@gmail.com',
+                            'cameronwilliamson@gmail.com',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -898,6 +903,7 @@ class _CustomTileState extends State<CustomTile> {
       onTap: () {
         setState(() {
           selectedIndex = 0;
+          memberList[selectedIndex]['outgoing'] = "06 : 40 pm";
         });
         Navigator.pop(context); // Close the drawer
       },
@@ -908,22 +914,52 @@ class _CustomTileState extends State<CustomTile> {
 List<Map<String, dynamic>> memberList = [
   {
     'img':
-        'https://i.pinimg.com/originals/30/43/56/304356ad573785dc0bfc9d64a76bbf95.jpg',
-    'name': 'John Doe',
-    'id': 'JD123',
+        'https://i.pinimg.com/280x280_RS/4b/de/19/4bde19338f53b52024dff2b2887acedb.jpg',
+    'name': 'Wade Warren',
+    'id': 'WSL0003',
     'isLogin': true,
     'isWorking': true,
-    'incoming': '09:00 AM',
-    'outgoing': '06:00 PM'
+    'incoming': '09:30 am',
+    'outgoing': ''
   },
   {
     'img':
-        'https://i.pinimg.com/originals/30/43/56/304356ad573785dc0bfc9d64a76bbf95.jpg',
-    'name': 'Jane Smith',
-    'id': 'JS456',
+        'https://i.pinimg.com/280x280_RS/01/e0/d8/01e0d8c54d15c3408415b0de5ed2a551.jpg',
+    'name': 'Esther Howard',
+    'id': 'WSL0034',
     'isLogin': true,
-    'isWorking': true,
-    'incoming': 'N/A',
-    'outgoing': 'N/A'
+    'isWorking': false,
+    'incoming': '09:30 am',
+    'outgoing': '06:40 pm'
+  },
+  {
+    'img':
+        'https://i.pinimg.com/280x280_RS/06/2f/d4/062fd4a8b9a3acab1c548b58ea1cf73d.jpg',
+    'name': 'Cameron Williamson',
+    'id': 'WSL0054',
+    'isLogin': false,
+    'isWorking': false,
+    'incoming': '09:30 am',
+    'outgoing': '06:40 pm'
+  },
+  {
+    'img':
+        'https://i.pinimg.com/280x280_RS/c5/5d/dc/c55ddc95a6aef38b81770cc0b11bf3a1.jpg',
+    'name': 'Brooklyn Simmonss',
+    'id': 'WSL0076',
+    'isLogin': true,
+    'isWorking': false,
+    'incoming': '09:30 am',
+    'outgoing': '06:40 pm'
+  },
+  {
+    'img':
+        'https://i.pinimg.com/280x280_RS/bd/b4/1d/bdb41d687b1752f90691abfa9bc13b93.jpg',
+    'name': 'Savannah Nguyen',
+    'id': 'WSL0065',
+    'isLogin': true,
+    'isWorking': false,
+    'incoming': '09:30 am',
+    'outgoing': '06:40 pm'
   },
 ];
